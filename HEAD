@@ -1,0 +1,2 @@
+ref: refs/heads/master
+ git remote add origin https://github.com/YuliaTsariv/Solid-pet-project3.git
