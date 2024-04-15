@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 public class ExceptionHandler {
-    HttpExceptionResolver resolver;
+    ExceptionResolver resolver;
 
     public ExceptionHandler(HttpExceptionResolver resolver){
         this.resolver = resolver;
     }
 
     public void handleException(Exception exception) {
-        log.info("Process handling exception: {}", exception);
         resolver.resolveException();
+        log.info("Process handling exception: {}", exception);
     }
 }

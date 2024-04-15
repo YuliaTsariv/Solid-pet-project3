@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.List;
 
 @Slf4j
-public class WinValidationStrategy implements ScoreCalculationStrategy {
+public class WinCalculationStrategy implements ScoreCalculationStrategy {
 
     @Override
     public void calculateWin(String currency, List<Long> payments) {

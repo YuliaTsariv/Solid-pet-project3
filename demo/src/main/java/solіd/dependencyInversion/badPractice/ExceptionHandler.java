@@ -9,7 +9,7 @@ public class ExceptionHandler {
     SocketIOExceptionResolver resolver;
 
     public void handleException(Exception exception) {
-        log.info("Process handling exception: {}", exception);
         resolver.resolveSocketIOException();
+        log.info("Process handling exception: {}", exception);
     }
 }

@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.util.List;
 
+
 import static java.util.Arrays.asList;
 
 @Service
@@ -34,7 +35,7 @@ public class RoundConfigService {
 
         var bingoTypeConfigs = List.of(new BingoTypeConfig());
 
-        return bingoTypeConfigs.stream().map(entry -> mapToBingoTypeResult(entry)).toList();
+        return bingoTypeConfigs.stream().map(this::mapToBingoTypeResult).toList();
     }
 
 
